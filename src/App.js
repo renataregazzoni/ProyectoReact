@@ -7,7 +7,7 @@ function App(){
         <div>
             <NavBar/>
 
-            <ItemList greeting={"Descubre la magia de la cerámica"}/> 
+            <ItemList greeting={"Descubre la magia de la cerámica."}/> 
         </div>
             
     )

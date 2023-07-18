@@ -4,7 +4,7 @@ const ItemList = ({ greeting }) => {
   return (
     <div className="columns is-centered">
       <div className="column is-half">
-        <h3 className="has-text-centered">{greeting}</h3>
+        <h3 className="subtitle has-text-centered">{greeting}</h3>
       </div>
     </div>
   );

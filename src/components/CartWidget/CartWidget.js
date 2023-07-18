@@ -3,7 +3,7 @@ import "bulma/css/bulma.css"
 
 const CartWidget = () =>{
     return (
-        <div className="cart-container is-pulled-right"> 
+        <div className="icon-text is-pulled-right"> 
             <img src={cart} alt="cart-widget"/>
             0
         </div>

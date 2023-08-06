@@ -1,21 +1,21 @@
+import { NavLink, Link } from "react-router-dom";
 import CartWidget from "../CartWidget/CartWidget";
 import "bulma/css/bulma.css"
 
 const NavBar = () =>{
     return(
-        <nav>
-            <section className="hero is-warning"> 
-                <div className="hero-body">
-                    <h1 className="title has-text-centered is-1">ClayCrafted</h1>
-                </div>
-            
-        
-            <div className="buttons is-centered is-spaced">
-                <button className="button is-rounded">Inicio</button>
-                <button className="button is-rounded">Productos</button>
-                <button className="button is-rounded">Clases</button>
+        <nav className="NavBar">
+            <Link to='/'>
+            <h1 className="title has-text-centered is-1">ClayCrafted</h1>
+            </Link>
+            <div className="Categories">
+                <NavLink to={'/category/tazas'} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option' }>Tazas</NavLink>
+                <NavLink to={'/category/platos'} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option' }>Platos</NavLink>
+                <NavLink to={'/category/portaVasos'} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option' }>PortaVasos</NavLink>
+                <NavLink to={'/category/velas'} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option' }>Velas</NavLink>
             </div>
-            </section>
+        
+           
             <CartWidget />
         </nav>
     )

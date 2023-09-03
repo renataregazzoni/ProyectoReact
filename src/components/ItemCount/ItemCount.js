@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './ItemCount.css';
 
 const ItemCount = () => {
 const [contador, setContador] = useState(1)
@@ -17,7 +18,7 @@ const decrementar = () => {
     }
 }
 return (
-    <div>
+    <div className="ItemCount">
         <button onClick={decrementar}> - </button>
         <p>{contador} </p>
         <button onClick={incrementar}> + </button>

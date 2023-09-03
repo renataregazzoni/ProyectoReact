@@ -4,7 +4,7 @@ const products = [
         pName: 'Taza',
         price: 3462,
         img: "..src/img/tazaFlores.jpg",
-        stock: 10,
+        stock: 15,
         description: 'Tazones florales hechos de ceramica',
         idCat: '1',
     },
